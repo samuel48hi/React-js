@@ -1,0 +1,59 @@
+1) use ref = we cannot use dom function directly in react so we use useRef->reference.
+     -=> syntax const inputRef=useRef();
+     -=> {used in callback function}
+     -=> {used for reference in react}
+
+2) useContext = UserContext.provider - It has to be used in app.js 
+     -=>{Usercontaxt.consumer - wherever you want to consume the data()it could be a any component}
+  
+    how to create useContext
+       -=>export const UserContext = React.createcontext().
+
+       -=>wrp inside               <usercontext.provider>   <=content in app.js=>   </usercontext.provider> 
+
+       -=>wrp inside               <usercontext.consumer>   <=content to particularcomponent=>   </usercontext.consumer>
+
+3) LAZY loading = its all about performance of application.
+
+           -=>the packages need to install is (lazy,suspense)
+
+4)INTERCEPTOR = authorization token.edit request configuration
+
+           syntax-=> axios.interceptors.request.use()
+
+5)useState = its a in build function in reactjs - will be used in single used only in single component it cannot be used directly accessed or shared across multiple component.
+
+6)useReducer = single value but multiple condition.
+
+7)redux = all application state is stored in js called store (Centralized state). it represented as global state where all components can access,
+
+  -=> mobx, zustand- another.
+
+8)Redux = to handle complex application where there will be hundred of component will be acess into states.
+     
+      =>view - user interface component.
+      =>action - method to update state. 
+      =>dispacter - calling action/method and passing state value / to trigger action
+      =>store - data  
+
+      >counterslice;
+          1.initiaize state
+          2.state name
+          3.reducers - multiple action
+          4.asyncthunk - to call APIss
+          5.extrareducer=>fulfiled,pending,rejector
+                     
+9)props => property <= to pass data from one component to another component
+
+10)useContext = we can pass state data to any of the component
+    
+   -=>provider and consumer ->to improve performance
+
+11)useCallback = prevent unneccessary re-rentering
+
+               -=>it is also said to be complete cocponent rendering
+
+    -=>useMemo is used while using useCallback
+
+               -=>it is also said to be function based or value based
+                                                     
